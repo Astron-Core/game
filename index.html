@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steal an Egg Finder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(18, 18, 28, 0.95);
+            border-radius: 16px;
+            padding: 30px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            border: 1px solid #2a2a40;
+        }
+        h1 {
+            text-align: center;
+            color: #7dd3fc;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+        .code-box {
+            background: #0d0d15;
+            border-radius: 12px;
+            padding: 20px;
+            position: relative;
+            border: 1px solid #333355;
+            overflow-x: auto;
+        }
+        pre {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #a5f3fc;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: background 0.2s;
+        }
+        .copy-btn:hover {
+            background: #2563eb;
+        }
+        .copy-btn.copied {
+            background: #10b981;
+        }
+        .note {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #cbd5e1;
+        }
+        .note strong {
+            color: #7dd3fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🥚 Steal an Egg Scripts</h1>
+        <p class="subtitle">รวมสคริปต์สำหรับเกม Steal an Egg (ต้องใช้ Executor)</p>
+        
+        <h2 style="text-align: center; color: #fbbf24; margin: 10px 0 15px; font-size: 1.4rem;">⚡ Combo Steal an Egg</h2>
+        <div class="code-box">
+            <button class="copy-btn" onclick="copyCode('code0', this)">คัดลอก</button>
+            <pre id="code0">loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/Venyx/main/VenyxHub"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/Venyx/main/VenyxHub"))()</pre>
+        </div>
+
+        <h2 style="text-align: center; color: #7dd3fc; margin: 30px 0 15px; font-size: 1.4rem;">📜 Steal an Egg Finder</h2>
+        <div class="code-box" style="margin-top: 20px;">
+            <button class="copy-btn" onclick="copyCode('code1', this)">คัดลอก</button>
+            <pre id="code1">loadstring(game:HttpGet("https://raw.githubusercontent.com/halilibrahimseviml1/Script-finder/refs/heads/main/metin.txt"))()</pre>
+        </div>
+
+        <h2 style="text-align: center; color: #f87171; margin: 30px 0 15px; font-size: 1.4rem;">🎮 MARIO</h2>
+        <div class="code-box">
+            <button class="copy-btn" onclick="copyCode('code2', this)">คัดลอก</button>
+            <pre id="code2">loadstring(game:HttpGet("https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/loader.lua"))()</pre>
+        </div>
+
+        <h2 style="text-align: center; color: #4ade80; margin: 30px 0 15px; font-size: 1.4rem;">🌾 Steal an Egg Farm</h2>
+        <div class="code-box">
+            <button class="copy-btn" onclick="copyCode('code3', this)">คัดลอก</button>
+            <pre id="code3">loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/Venyx/main/VenyxHub"))()</pre>
+        </div>
+
+        <div class="note">
+            <strong>Combo Steal an Egg:</strong> รัน Venyx Hub สองครั้งติดกัน<br><br>
+            <strong>Steal an Egg Finder:</strong> Mobile Script Finder ที่จะค้นหาและแสดงสคริปต์สำหรับเกม <strong>Steal an Egg</strong> จาก ScriptBlox อัตโนมัติ<br><br>
+            <strong>MARIO:</strong> สคริปต์ Mario Hub (จาก xDTaraZz) สำหรับเกม Steal an Egg / Break and Steal an Egg<br><br>
+            <strong>Steal an Egg Farm:</strong> สคริปต์ Venyx Hub สำหรับฟาร์มในเกม Steal an Egg<br><br>
+            ⚠️ ต้องใช้ Roblox Executor (เช่น Synapse, Fluxus, Solara ฯลฯ) ถึงจะรันได้ เพราะใช้ <code>HttpGet</code> และ <code>loadstring</code>
+        </div>
+    </div>
+
+    <script>
+        function copyCode(id, btn) {
+            const code = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                const original = btn.textContent;
+                btn.textContent = 'คัดลอกแล้ว!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = original;
+                    btn.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                alert('คัดลอกไม่สำเร็จ: ' + err);
+            });
+        }
+    </script>
+</body>
+</html>
