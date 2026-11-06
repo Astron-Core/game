@@ -95,40 +95,41 @@
         <h1>🥚 Steal an Egg Scripts</h1>
         <p class="subtitle">รวมสคริปต์สำหรับเกม Steal an Egg (ต้องใช้ Executor)</p>
         
-        <h2 style="text-align: center; color: #fbbf24; margin: 10px 0 15px; font-size: 1.4rem;">⚡ Combo Steal an Egg</h2>
+        <h2 style="text-align: center; color: #c084fc; margin: 10px 0 15px; font-size: 1.4rem;">👼 Tenshi Script</h2>
+        <div class="code-box">
+            <button class="copy-btn" onclick="copyCode('codeTenshi', this)">คัดลอก</button>
+            <pre id="codeTenshi">loadstring(game:HttpGet("https://raw.githubusercontent.com/syss1211/Tenshi-script/main/NYX.lua"))()</pre>
+        </div>
+
+        <h2 style="text-align: center; color: #fbbf24; margin: 30px 0 15px; font-size: 1.4rem;">⚡ Combo Steal an Egg</h2>
         <div class="code-box">
             <button class="copy-btn" onclick="copyCode('code0', this)">คัดลอก</button>
             <pre id="code0">loadstring(game:HttpGet("https://raw.githubusercontent.com/halilibrahimseviml1/Script-finder/refs/heads/main/metin.txt"))();
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/Venyx/main/VenyxHub"))();</pre>
         </div>
-
         <h2 style="text-align: center; color: #7dd3fc; margin: 30px 0 15px; font-size: 1.4rem;">📜 Steal an Egg Finder</h2>
         <div class="code-box" style="margin-top: 20px;">
             <button class="copy-btn" onclick="copyCode('code1', this)">คัดลอก</button>
             <pre id="code1">loadstring(game:HttpGet("https://raw.githubusercontent.com/halilibrahimseviml1/Script-finder/refs/heads/main/metin.txt"))()</pre>
         </div>
-
         <h2 style="text-align: center; color: #f87171; margin: 30px 0 15px; font-size: 1.4rem;">🎮 MARIO</h2>
         <div class="code-box">
             <button class="copy-btn" onclick="copyCode('code2', this)">คัดลอก</button>
             <pre id="code2">loadstring(game:HttpGet("https://raw.githubusercontent.com/xDTaraZz/Roblox-Scripts/refs/heads/main/loader.lua"))()</pre>
         </div>
-
         <h2 style="text-align: center; color: #4ade80; margin: 30px 0 15px; font-size: 1.4rem;">🌾 Steal an Egg Farm</h2>
         <div class="code-box">
             <button class="copy-btn" onclick="copyCode('code3', this)">คัดลอก</button>
             <pre id="code3">loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/Venyx/main/VenyxHub"))()</pre>
         </div>
-
         <div class="note">
-            <strong>Combo Steal an Egg:</strong> รัน Venyx Hub สองครั้งติดกัน<br><br>
+            <strong>Tenshi Script:</strong> สคริปต์ Tenshi (NYX.lua)<br><br>
+            <strong>Combo Steal an Egg:</strong> รัน Script Finder + Venyx Hub ติดกัน<br><br>
             <strong>Steal an Egg Finder:</strong> Mobile Script Finder ที่จะค้นหาและแสดงสคริปต์สำหรับเกม <strong>Steal an Egg</strong> จาก ScriptBlox อัตโนมัติ<br><br>
             <strong>MARIO:</strong> สคริปต์ Mario Hub (จาก xDTaraZz) สำหรับเกม Steal an Egg / Break and Steal an Egg<br><br>
             <strong>Steal an Egg Farm:</strong> สคริปต์ Venyx Hub สำหรับฟาร์มในเกม Steal an Egg<br><br>
             ⚠️ ต้องใช้ Roblox Executor (เช่น Synapse, Fluxus, Solara ฯลฯ) ถึงจะรันได้ เพราะใช้ <code>HttpGet</code> และ <code>loadstring</code>
         </div>
-
         <h2 style="text-align: center; color: #60a5fa; margin: 40px 0 15px; font-size: 1.4rem;">📱 DELTA</h2>
         <div class="code-box" style="text-align: center; padding: 25px;">
             <a href="https://deltaexploits.gg/delta-executor-mobile" target="_blank" style="color: #7dd3fc; font-size: 1.1rem; text-decoration: none; word-break: break-all;">
@@ -139,7 +140,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/Venyx/main
             <button class="copy-btn" style="position: static; background: #10b981;" onclick="window.open('https://deltaexploits.gg/delta-executor-mobile', '_blank')">Open page</button>
         </div>
     </div>
-
     <script>
         function copyCode(id, btn) {
             const code = document.getElementById(id).innerText;
@@ -155,7 +155,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/Venyx/main
                 alert('คัดลอกไม่สำเร็จ: ' + err);
             });
         }
-
         function copyText(text, btn) {
             navigator.clipboard.writeText(text).then(() => {
                 const original = btn.textContent;
