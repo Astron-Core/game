@@ -128,12 +128,36 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/tienkhanh1/Venyx/main
             <strong>Steal an Egg Farm:</strong> สคริปต์ Venyx Hub สำหรับฟาร์มในเกม Steal an Egg<br><br>
             ⚠️ ต้องใช้ Roblox Executor (เช่น Synapse, Fluxus, Solara ฯลฯ) ถึงจะรันได้ เพราะใช้ <code>HttpGet</code> และ <code>loadstring</code>
         </div>
+
+        <h2 style="text-align: center; color: #60a5fa; margin: 40px 0 15px; font-size: 1.4rem;">📱 DELTA</h2>
+        <div class="code-box" style="text-align: center; padding: 25px;">
+            <a href="https://deltaexploits.gg/delta-executor-mobile" target="_blank" style="color: #7dd3fc; font-size: 1.1rem; text-decoration: none; word-break: break-all;">
+                https://deltaexploits.gg/delta-executor-mobile
+            </a>
+            <br><br>
+            <button class="copy-btn" style="position: static; margin-right: 10px;" onclick="copyText('https://deltaexploits.gg/delta-executor-mobile', this)">คัดลอกลิงก์</button>
+            <button class="copy-btn" style="position: static; background: #10b981;" onclick="window.open('https://deltaexploits.gg/delta-executor-mobile', '_blank')">Open page</button>
+        </div>
     </div>
 
     <script>
         function copyCode(id, btn) {
             const code = document.getElementById(id).innerText;
             navigator.clipboard.writeText(code).then(() => {
+                const original = btn.textContent;
+                btn.textContent = 'คัดลอกแล้ว!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = original;
+                    btn.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                alert('คัดลอกไม่สำเร็จ: ' + err);
+            });
+        }
+
+        function copyText(text, btn) {
+            navigator.clipboard.writeText(text).then(() => {
                 const original = btn.textContent;
                 btn.textContent = 'คัดลอกแล้ว!';
                 btn.classList.add('copied');
